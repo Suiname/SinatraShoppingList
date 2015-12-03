@@ -1,0 +1,8 @@
+<h1>Destruction</h1>
+<p>
+  Are you absolutely sure you want to destroy <%= @item.name %>?  If you do this cannot be undone and id#<%= @item.id %> can never be reused.
+</p>
+<form action="/destroy" method="post">
+  <input type="hidden" name="id" value="<%= @item.id %>">
+  <input type="submit" value="Destroy Item">
+</form>
